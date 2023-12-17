@@ -10,7 +10,6 @@ import {useAuth} from "../../hooks/auth";
 import { api } from "../../services/api";
 export function Profile(){
   const {user, updateProfile} = useAuth();
-  console.log(user)
   const [name, setName] = useState(user.name);
   const [email, setEmail] = useState(user.email);
   const [oldPassword, setOldPassword] = useState("");

@@ -54,7 +54,7 @@ export function MovieNote(){
                 </div>
                 <div className="tags-container">
                 {
-                  note.tags && note.tags.map((tag) => <Tag key={tag.id} title={tag.name}/>)
+                  note.tags && note.tags.map((tag) => <Tag key={String(tag.id)} title={tag.name}/>)
                 }
                 </div>
                 <span>{note.description}</span>
